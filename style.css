@@ -1,0 +1,318 @@
+/* === Navigation Bar === */
+.top-nav {
+  background-color: #D3D3D3;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.top-nav a {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  color: #4e5156;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+  color: #000000;
+}
+
+/* === home === */
+.home-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+  text-align: center;
+
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url("./images/left.jpg"),
+    url("./images/right.jpg");
+
+  background-position:
+    center center,
+    left center,
+    right center;
+
+  background-size:
+    cover,
+    40% auto,
+    40% auto;
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-color: #fcffe2;
+  background-blend-mode: lighten;
+}
+
+.intro-text h1 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #7D838F;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #7D838F;
+}
+
+/* === About Me === */
+.section-title-about {
+  text-align: center;
+  color: #4e5156;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  padding: 8px 0;
+  margin-top: 40px;
+}
+
+/* Section Content */
+.section-content {
+  background-color: #FFFFFF;
+  color: black;
+  font-family: Georgia, serif;
+  margin: 10px 160px;
+  padding: 10px;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+/* Resume-PDF */
+.resume-pdf {
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #205dd5;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-top: 5px;
+}
+.resume-pdf a {
+  color: #205dd5;
+  text-decoration: underline;
+}
+
+/* Hobby Images */
+.hobby-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.hobby-item {
+  text-align: center;
+  width: 40%;
+  border: 1px solid #7D838F;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  transition: transform 0.3s ease;
+}
+
+.hobby-item:hover {
+  transform: scale(1.02);
+}
+
+.hobby-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.caption {
+  color: #7D838F;
+  font-size: 0.9em;
+  margin-top: 5px;
+  font-family: Georgia, serif;
+}
+
+/* === Work Experience & Other Activity === */
+
+/* Section Title */
+.section-title-work {
+  text-align: center;
+  background-color: #ffffff;
+  color: #7D838F;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.section-title-activity {
+  text-align: center;
+  background-color: #ffffff;
+  color: #7D838F;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+/* Section Content */
+.section-content-other {
+  background-color: #FFFFFF;
+  color: black;
+  font-family: Georgia, serif;
+  margin: 20px 60px;
+  padding: 20px;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.position-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.org-info {
+  font-size: 20px;
+  color: #000;
+}
+
+.org-info a {
+  color: #205dd5;
+  text-decoration: none;
+}
+
+.org-info a:hover {
+  text-decoration: underline;
+}
+
+.date {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "➤ ";
+  color: #205dd5;
+  font-weight: bold;
+}
+
+ul li {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* === Contact === */
+.section-title-contact {
+  text-align: center;
+  font-family: Georgia, serif;
+  background-color: #ffffff;
+  color: #7D838F;
+  font-weight: bold;
+  padding: 40px 0 10px;
+  margin-top: 40px;
+}
+
+.section-title-contact h1 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.get-in-toutch{
+  margin: 20px 5px;
+  padding: 20px;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+.get-in-toutch h1 {
+  font-family: Georgia, serif;
+  text-align: center;
+  font-size: 24px;
+  color: #555;
+  margin-top: 0;
+}
+
+/* Contact Boxes */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin: 5px 60px;
+}
+.contact-box {
+  flex: 1 1 300px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box h3 {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.contact-box p {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  margin: 0;
+}
+.contact-box a {
+  color: #205dd5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+/* === Footer === */
+.home-footer {
+  background-color: #FFFFFF;
+  color: #000;
+  text-align: center;
+  padding: 10px 0;
+  font-family: Georgia, serif;
+  font-size: 14px;
+}
+
+.other-footer {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: Georgia, serif;
+}
+
+.contact-footer{
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: Georgia, serif;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
